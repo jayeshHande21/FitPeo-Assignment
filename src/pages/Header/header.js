@@ -5,7 +5,6 @@ import SettingsRoundedIcon from '@mui/icons-material/SettingsRounded';
 import Avatar from '@mui/material/Avatar';
 import Stack from '@mui/material/Stack';
 import Badge from '@mui/material/Badge';
-import MailIcon from '@mui/icons-material/Mail';
 import SearchIcon from '@mui/icons-material/Search';
 import logo from "./logo.png"
 import img1 from "./images/img1.jpg";

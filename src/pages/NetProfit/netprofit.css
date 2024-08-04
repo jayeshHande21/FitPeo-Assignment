@@ -1,0 +1,89 @@
+.netprofit-container {
+  background-color: #333;
+  border-radius: 8px;
+  padding: 5px;
+  margin: 1px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 100%;
+}
+
+.netprofit-title {
+  font-size: 0.9rem;
+  color: white;
+  text-align: left;
+  margin: 0px;
+  padding: 0px;
+}
+
+.netprofit-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+  margin: 0px;
+  padding: 0px;
+}
+
+.netprofit-value {
+  color: white;
+  font-size: 1.5rem;
+  margin:0px;
+  padding:0px;
+}
+
+.netprofit-chart {
+  width: 50px;
+  height: 50px;
+  margin-right:20px;
+}
+
+.netprofit-details {
+  display: flex;
+  justify-content : space-between;
+  /* margin-top: 10px; */
+}
+
+.netprofit-percentage {
+  color: green;
+  font-size: 0.9rem;
+  margin:0px;
+  padding:0px;
+}
+
+.netprofit-note {
+  color: white;
+  font-size: 0.4rem;
+  margin-top: 2px;
+  margin-right:15px;
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+  .netprofit-container {
+    padding: 3px;
+  }
+
+  .netprofit-title {
+    font-size: 0.7rem;
+  }
+
+  .netprofit-value {
+    font-size: 0.7rem;
+  }
+
+  .netprofit-chart {
+    width: 25px;
+    height: 25px;
+  }
+
+  .netprofit-percentage {
+    font-size: 0.4rem;
+  }
+
+  .netprofit-note {
+    font-size: 0.35rem;
+  }
+}

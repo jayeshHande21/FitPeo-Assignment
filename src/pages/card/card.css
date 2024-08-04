@@ -1,0 +1,89 @@
+.card {
+  background-color: #333;
+  color: white;
+  border-radius: 6px; 
+  padding: 4px; /* Reduced padding */
+  margin: 4px; /* Reduced margin */
+  flex: 1;
+  min-width: 60px; /* Reduced minimum width */
+  max-width: 100%; /* Reduced maximum width */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.card-image {
+  width: 26px;
+  height: 26px;
+  object-fit: cover;
+  border-radius: 30%;
+  float: left; /* Floats the image to the left */
+  margin-right: 90%; /* Optional: Adds spacing between the image and adjacent content */
+}
+
+
+.card-title {
+  margin: 0; 
+  font-size: 0.8rem; 
+  text-align:left;
+  }
+
+
+.card-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; 
+  width: 100%; 
+
+}
+
+.card-value {
+  font-size: 0.9rem; /* Smaller font size */
+  margin: 0;
+}
+
+.card-percentage {
+  font-size: 0.7rem; /* Smaller font size */
+}
+
+.card-percentage.positive {
+  color: #4caf50; 
+}
+
+.card-percentage.negative {
+  color: #f44336; 
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+  .card {
+    min-width: 50px; /* Further reduced minimum width */
+    max-width: 80px; /* Further reduced maximum width */
+  }
+
+  .card-image {
+    width: 20px; /* Adjusted image width */
+    height: 20px; /* Adjusted image height */
+  }
+
+  .card-title {
+    font-size: 0.6rem; /* Consistent smaller font size */
+  }
+
+  .card-value {
+    font-size: 0.7rem; /* Consistent smaller font size */
+  }
+
+  .card-percentage {
+    font-size: 0.6rem; /* Consistent smaller font size */
+  }
+}
+
+/* Flex container for cards */
+.cards-container {
+  display: flex;
+  flex-wrap: wrap; 
+  gap: 6px; /* Reduced gap */
+  align-items: flex-start; 
+}

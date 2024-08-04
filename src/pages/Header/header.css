@@ -1,0 +1,65 @@
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* padding: 5px 5px; */
+    background-color: #333; /* Dark background color to match sidebar */
+    border-bottom: 1px solid #444; /* Slightly lighter border to match the dark theme */
+    color: white; /* Text color to match the dark theme */
+  }
+  
+  .logo {
+    width: 28px;
+    margin-right: 30px;
+    margin-left: 10px;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Search container styles */
+  .search-container {
+    flex: 1;
+  }
+  
+  /* Search input field styles */
+  .search-input {
+    border-radius: 1rem;
+    background-color: #444; /* Dark background for the input field */
+    color: white; /* Text color inside the input field */
+  }
+  
+  .search-input .MuiOutlinedInput-root {
+    border-radius: 4px;
+  }
+  
+  .search-input .MuiOutlinedInput-input {
+    color: white; /* Text color inside the input field */
+  }
+  
+  .search-input .MuiOutlinedInput-notchedOutline {
+    border-color: #555; /* Border color for the input field */
+  }
+  
+  /* Icon container styles */
+  .icon-container {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .icon-container .MuiIconButton-root {
+    color: white; /* Icon color to match the dark theme */
+    transition: color 0.3s;
+  }
+  
+  .icon-container .MuiIconButton-root:hover {
+    color: #ff4081; /* Hover color for icons */
+  }
+  
+  /* Responsive design for mobile screens */
+  @media (max-width: 600px) {
+    /* Hide search input on small screens */
+    .search-container {
+      display: none;
+    }
+  }
+  

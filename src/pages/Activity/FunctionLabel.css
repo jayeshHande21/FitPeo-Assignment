@@ -1,0 +1,45 @@
+/* FunctionLabel.css */
+.bar-chart-container {
+  display: flex; 
+  background-color: #333; /* Set background color to black */
+  color: white; /* Set text color to white */
+  border-radius: 8px;
+  max-width: 100%;
+  overflow: hidden;
+  width: 100%;
+  margin:2px;
+  height: 200px;
+   /* margin:auto; */
+  padding: 0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: Add shadow for better visibility */
+}
+
+.bar-chart {
+  height: auto;
+}
+
+/* Customize axis labels and numbers */
+.bar-chart .MuiXAxis-label,
+.bar-chart .MuiYAxis-label,
+.bar-chart .MuiXAxis-tick,
+.bar-chart .MuiYAxis-tick {
+  color: white; /* Set axis labels and numbers to white */
+}
+
+.bar-chart .MuiBar-root {
+  fill: #2196f3; /* Bar color */
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+  .bar-chart-container {
+    padding: 5px;
+  }
+
+  .bar-chart .MuiXAxis-label,
+  .bar-chart .MuiYAxis-label,
+  .bar-chart .MuiXAxis-tick,
+  .bar-chart .MuiYAxis-tick {
+    font-size: 8px; /* Smaller font size for smaller screens */
+  }
+}

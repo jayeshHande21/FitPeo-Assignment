@@ -1,0 +1,93 @@
+.hero-container {
+  display: flex;
+  height: 93vh;
+  overflow: hidden; /* Prevent scrolling on larger screens */
+  background-color: black;
+}
+
+.left {
+  width: 60%;
+  background-color: black;
+  height: 100%;
+  box-sizing: border-box;
+  overflow: hidden; /* Prevent scrolling in the left container */
+}
+
+.right {
+  width: 40%;
+  background-color: black;
+  height: 100%;
+  box-sizing: border-box;
+  
+}
+
+.table-container {
+  overflow-x: auto;
+  width: 100%;
+  position: relative;
+  bottom: 0;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: white;
+  font-size: 0.875rem;
+}
+
+.table-header {
+  text-align: left;
+}
+
+.header-cell {
+  padding: 0.5rem 1rem;
+  font-weight: 500;
+  color: #1f2937;
+}
+
+.table-body {
+  border-top: 2px solid #e5e7eb;
+}
+
+.body-cell {
+  padding: 0.5rem 1rem;
+  color: #374151;
+}
+
+.view-button {
+  display: inline-block;
+  border-radius: 0.25rem;
+  background-color: #4f46e5;
+  padding: 0.5rem 1rem;
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: white;
+  text-decoration: none;
+}
+
+.view-button:hover {
+  background-color: #4338ca;
+}
+
+/* Mobile responsive design */
+@media (max-width: 768px) {
+  .hero-container {
+    flex-direction: column;
+    overflow: hidden; /* Prevent unnecessary scrolling */
+  }
+
+  .left {
+    background-color: black;
+    width: 100%;
+    height: calc(100% - 50px); /* Adjust height to make space for the right container */
+    overflow-y: auto; /* Enable vertical scrolling for the left container */
+  }
+
+  .right {
+    width: 100%;
+    height: 50px; /* Fixed height for the right container */
+    position: absolute; /* Position absolutely */
+    bottom: 0; /* Stick to the bottom */
+    background-color: black; /* Ensure consistent background color */
+  }
+}

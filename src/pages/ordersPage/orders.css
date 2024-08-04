@@ -1,0 +1,96 @@
+.table-container {
+  overflow-y: hidden;
+  overflow-x: hidden;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  height: 50vh; 
+  margin: 1px;
+  border-radius: 8px;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  height: 100%;
+}
+
+.table-header {
+  background-color: #333;
+  text-align: left;
+  color: white;
+}
+
+.header-cell {
+  font-weight: 500;
+  color: white !important;
+  font-size: 0.4
+
+}
+
+.table-body {
+  background-color: #333;
+  color: white !important;
+  padding: 0px;
+  margin: 0px;
+
+}
+
+.body-cell {
+  color: white !important;
+  
+  margin: 0px;
+  font-size: 0.4 ;
+    border-bottom: 0.5px solid #ccc;
+}
+.body-cell1 {
+ 
+    border-bottom: 0.5px solid #ccc;
+  margin: 0px;
+  font-size: 0.4 
+}
+
+.customer-image {
+  width: 25px; /* Reduce size */
+  height: 25px; /* Reduce size */
+  object-fit: cover;
+  border-radius: 30%;
+  margin-right: 8px;
+  vertical-align: middle;
+}
+
+
+/* Responsive adjustments */
+@media (max-width: 1200px) {
+  .table-container {
+    height: 60vh; /* Adjust height for medium screens */
+  }
+}
+
+@media (max-width: 768px) {
+  .table-container {
+    height: 70vh; /* Adjust height for tablets */
+  }
+}
+
+@media (max-width: 600px) {
+  .table-container {
+    height: 80vh; /* Adjust height for mobile screens */
+    padding: 0 5px;
+  }
+
+  .header-cell {
+    font-size: 0.3; /* Further reduce font size for mobile */
+  }
+
+  .body-cell {
+    font-size: 0.3; /* Further reduce font size for mobile */
+  }
+
+  .customer-image {
+    width: 6px; /* Further reduce size for mobile */
+    height: 6px; /* Further reduce size for mobile */
+  }
+
+ 
+}

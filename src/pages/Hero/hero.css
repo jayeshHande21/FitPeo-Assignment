@@ -31,6 +31,7 @@
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
+  flex-grow: 1;
 }
 
 .table-container {
@@ -88,33 +89,34 @@
   color: white;
   margin: 4px;
   border-radius: 8px;
-  height: 100%; /* Allow the feedback container to fill the right container's height */
-  overflow-y: auto; /* Enable vertical scrolling */
+  height: 100%; 
+  overflow-y: auto; 
 }
 
 /* Mobile responsive design */
 @media (max-width: 768px) {
   .hero-container {
     flex-direction: column;
-    overflow: hidden; /* Prevent unnecessary scrolling */
+    height: 100vh; 
+    overflow: auto; 
   }
 
-  .sidebar-space{
-    display:none;
+  .sidebar-space {
+    display: none;
   }
 
   .left {
     background-color: black;
     width: 100%;
-    height: calc(100% - 50px); /* Adjust height to make space for the right container */
-    overflow-y: auto; /* Enable vertical scrolling for the left container */
+    height: 60%; 
+    overflow-y: auto;
   }
 
   .right {
     width: 100%;
-    height: 50px; /* Fixed height for the right container */
-    position: absolute; /* Position absolutely */
-    bottom: 0; /* Stick to the bottom */
-    background-color: black; /* Ensure consistent background color */
+    height: 40%; 
+    background-color: black;
+    overflow-y: auto; 
   }
 }
+

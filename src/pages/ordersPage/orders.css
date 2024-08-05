@@ -1,3 +1,27 @@
+.hero-container {
+  display: flex;
+  height: 93vh;
+  overflow: hidden;
+  background-color: black;
+}
+
+.left {
+  width: 60%;
+  background-color: black;
+  height: 100%;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.right {
+  width: 40%;
+  background-color: black;
+  height: 100%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+}
+
 .table-container {
   overflow-y: scroll;
   overflow-x: hidden;
@@ -7,6 +31,20 @@
   height: 50vh; 
   margin: 1px;
   border-radius: 8px;
+}
+
+.table-container::-webkit-scrollbar {
+  width: 10px; 
+}
+
+.table-container::-webkit-scrollbar-thumb {
+  background-color: #888;
+  border-radius: 10px;
+  border: 3px solid #555;
+}
+
+.table-container::-webkit-scrollbar-track {
+  background: #555;
 }
 
 .table {
@@ -24,8 +62,7 @@
 .header-cell {
   font-weight: 500;
   color: white !important;
-  font-size: 0.4
-
+  font-size: 0.4;
 }
 
 .table-body {
@@ -33,64 +70,83 @@
   color: white !important;
   padding: 0px;
   margin: 0px;
-
 }
 
 .body-cell {
   color: white !important;
-  
   margin: 0px;
-  font-size: 0.4 ;
-    border-bottom: 0.5px solid #ccc;
+  font-size: 0.4;
+  border-bottom: 0.5px solid #ccc;
 }
+
 .body-cell1 {
- 
-    border-bottom: 0.5px solid #ccc;
+  border-bottom: 0.5px solid #ccc;
   margin: 0px;
-  font-size: 0.4 
+  font-size: 0.4;
 }
 
 .customer-image {
-  width: 25px; /* Reduce size */
-  height: 25px; /* Reduce size */
+  width: 25px;
+  height: 25px;
   object-fit: cover;
   border-radius: 30%;
   margin-right: 8px;
   vertical-align: middle;
 }
 
-
-/* Responsive adjustments */
 @media (max-width: 1200px) {
   .table-container {
-    height: 60vh; /* Adjust height for medium screens */
+    height: 60vh;
   }
 }
 
 @media (max-width: 768px) {
   .table-container {
-    height: 70vh; /* Adjust height for tablets */
+    height: 70vh;
   }
 }
 
 @media (max-width: 600px) {
   .table-container {
-    height: 80vh; /* Adjust height for mobile screens */
+    height: 70vh;
     padding: 0 5px;
+    /* overflow-y : scroll; */
   }
 
   .header-cell {
-    font-size: 0.3; /* Further reduce font size for mobile */
+    font-size: 0.3;
   }
 
   .body-cell {
-    font-size: 0.3; /* Further reduce font size for mobile */
+    font-size: 0.3;
   }
 
   .customer-image {
-    width: 6px; /* Further reduce size for mobile */
-    height: 6px; /* Further reduce size for mobile */
+    width: 6px;
+    height: 6px;
+  }
+}
+
+
+
+@media (max-width: 768px) {
+  .hero-container {
+    flex-direction: column;
+    overflow: hidden;
   }
 
- 
+  .left {
+    background-color: black;
+    width: 100%;
+    height: calc(100% - 50px);
+    overflow-y: auto;
+  }
+
+  .right {
+    width: 100%;
+    height: 50px;
+    position: absolute;
+    bottom: 0;
+    background-color: black;
+  }
 }

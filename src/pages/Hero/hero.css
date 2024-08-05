@@ -1,8 +1,19 @@
 .hero-container {
   display: flex;
-  height: 93vh;
+  height: 92vh;
   overflow: hidden; /* Prevent scrolling on larger screens */
   background-color: black;
+}
+
+.sidebar-space{
+  width: 60px;
+  background-color: #333;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 20px;
+  height: auto;
+  box-sizing: border-box;
 }
 
 .left {
@@ -10,7 +21,7 @@
   background-color: black;
   height: 100%;
   box-sizing: border-box;
-  overflow: hidden; /* Prevent scrolling in the left container */
+ 
 }
 
 .right {
@@ -18,7 +29,8 @@
   background-color: black;
   height: 100%;
   box-sizing: border-box;
-  
+  display: flex;
+  flex-direction: column;
 }
 
 .table-container {
@@ -69,11 +81,26 @@
   background-color: #4338ca;
 }
 
+/* Feedback container inside the right container */
+.feedback-container {
+  padding: 4px;
+  background-color: #333;
+  color: white;
+  margin: 4px;
+  border-radius: 8px;
+  height: 100%; /* Allow the feedback container to fill the right container's height */
+  overflow-y: auto; /* Enable vertical scrolling */
+}
+
 /* Mobile responsive design */
 @media (max-width: 768px) {
   .hero-container {
     flex-direction: column;
     overflow: hidden; /* Prevent unnecessary scrolling */
+  }
+
+  .sidebar-space{
+    display:none;
   }
 
   .left {

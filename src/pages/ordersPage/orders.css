@@ -1,5 +1,5 @@
 .table-container {
-  overflow-y: hidden;
+  overflow-y: scroll;
   overflow-x: hidden;
   width: 100%;
   position: fixed;

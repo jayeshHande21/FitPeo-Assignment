@@ -11,7 +11,7 @@ import './hero.css';
 const Hero = () => {
   return (
     <div className="hero-container">
-      <div className="sidebar">
+      <div className="sidebar-space">
        <Sidebar/>
       </div>
       

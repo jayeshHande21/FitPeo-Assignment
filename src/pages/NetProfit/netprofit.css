@@ -2,11 +2,11 @@
   background-color: #333;
   border-radius: 8px;
   padding: 5px;
-  margin: 1px;
+  margin: 2px;
   display: flex;
   flex-direction: column;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  width: 100%;
+  /* width: 100%; */
 }
 
 .netprofit-title {

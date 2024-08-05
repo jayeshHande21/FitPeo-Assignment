@@ -6,6 +6,7 @@
     background-color: #333; /* Dark background color to match sidebar */
     border-bottom: 1px solid #444; /* Slightly lighter border to match the dark theme */
     color: white; /* Text color to match the dark theme */
+    padding:1px;
   }
   
   .logo {
@@ -14,16 +15,20 @@
     margin-left: 10px;
     justify-content: center;
     align-items: center;
+     
   }
   
   /* Search container styles */
   .search-container {
     flex: 1;
+    padding:0px;
+    justify-content:center
   }
   
   /* Search input field styles */
   .search-input {
     border-radius: 1rem;
+    padding:0px;
     background-color: #444; /* Dark background for the input field */
     color: white; /* Text color inside the input field */
   }
@@ -34,10 +39,13 @@
   
   .search-input .MuiOutlinedInput-input {
     color: white; /* Text color inside the input field */
+    padding:0px;
+
   }
   
   .search-input .MuiOutlinedInput-notchedOutline {
-    border-color: #555; /* Border color for the input field */
+   border:none;
+  
   }
   
   /* Icon container styles */
